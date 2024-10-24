@@ -1,3 +1,4 @@
+import Cursor from "@/components/Cursor";
 import Navbar from "@/components/Navbar";
 import "@/public/css/style.css";
 
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Cursor />
         <Navbar />
         {children}
       </body>
