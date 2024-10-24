@@ -11,7 +11,7 @@
 }
 .navbar-inner {
   padding: 10px 20px;
-  background-color: #ffffff1f;
+  background-color: #e9e9ff2e;
   border-radius: 10px;
   backdrop-filter: blur(30px);
   display: flex;
@@ -30,7 +30,9 @@
   font-weight: 500;
   color: var(--light-alt);
   text-transform: capitalize;
+  transition: 0.5s ease all;
 }
-.navbar .navbar-nav .nav-item .nav-link.active {
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:hover {
   color: var(--light);
 }

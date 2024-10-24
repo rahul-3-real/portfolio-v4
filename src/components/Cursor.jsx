@@ -11,7 +11,7 @@ const Cursor = () => {
         const left = `${e.clientX}px`;
         const top = `${e.clientY}px`;
 
-        cursorRef.current.style.background = `radial-gradient(1000px at ${left} ${top}, #dddddd26, transparent 80%)`;
+        cursorRef.current.style.background = `radial-gradient(1000px at ${left} ${top}, #264fcb26, transparent 80%)`;
       }
     };
 
