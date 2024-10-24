@@ -10,7 +10,7 @@
   --dark-alt: #151515;
   --light: #ffffff;
   --light-alt: #999999;
-  --gray: #949494;
+  --gray: #9d9b9b;
 }
 
 /* Rest Styles */
@@ -65,7 +65,8 @@ a:hover {
   text-decoration: none;
 }
 p {
-  font-size: 18px;
-  font-weight: 300;
+  /* font-size: 18px;
+  font-weight: 300; */
   color: var(--gray);
+  line-height: 160%;
 }

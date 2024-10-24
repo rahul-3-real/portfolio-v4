@@ -39,7 +39,9 @@
 
 /* Hero */
 .hero {
-  padding-top: 100px;
+  padding: 100px 0;
+  position: sticky;
+  top: 100px;
 }
 .hero h1 {
   font-size: 64px;
@@ -60,4 +62,9 @@
   -webkit-text-fill-color: transparent;
   line-height: 100%;
   margin-bottom: 30px;
+}
+
+/* Bio Section */
+.bio-section {
+  padding: 100px 0;
 }
