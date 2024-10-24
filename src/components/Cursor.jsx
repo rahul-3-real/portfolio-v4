@@ -4,14 +4,15 @@ import { useEffect, useRef } from "react";
 
 const Cursor = () => {
   const cursorRef = useRef(null);
+  const position = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
     const handleMouseMove = (e) => {
       if (cursorRef.current) {
-        const left = `${e.clientX}px`;
-        const top = `${e.clientY}px`;
+        position.current.x = e.clientX;
+        position.current.y = e.clientY;
 
-        cursorRef.current.style.background = `radial-gradient(1000px at ${left} ${top}, #264fcb26, transparent 80%)`;
+        cursorRef.current.style.background = `radial-gradient(1000px circle at ${position.current.x}px ${position.current.y}px, #264fcb26, transparent 80%)`;
       }
     };
 
@@ -24,8 +25,11 @@ const Cursor = () => {
 
   return (
     <div
-      className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute h-screen w-screen"
+      className="pointer-events-none fixed inset-0 -z-1 transition duration-300 lg:absolute h-screen w-screen"
       ref={cursorRef}
+      style={{
+        background: `radial-gradient(1000px circle at 0px 0px, #264fcb26, transparent 80%)`,
+      }}
     ></div>
   );
 };

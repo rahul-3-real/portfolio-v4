@@ -6,13 +6,14 @@ import { Logo } from "@/public/images";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div className="container">
+      <div className="container p-0">
         <nav className="navbar-inner">
           <Link href="/" className="logo">
             <Image
               src={Logo}
               alt="Rahul Yadav | Fullstack Developer"
               width="50"
+              priority
             />
           </Link>
           <ul className="navbar-nav">

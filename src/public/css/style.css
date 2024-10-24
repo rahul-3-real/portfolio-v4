@@ -36,3 +36,28 @@
 .navbar .navbar-nav .nav-item .nav-link:hover {
   color: var(--light);
 }
+
+/* Hero */
+.hero {
+  padding-top: 100px;
+}
+.hero h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: transparent;
+  background: -webkit-linear-gradient(var(--light), var(--gray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 100%;
+  margin-bottom: 15px;
+}
+.hero h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: transparent;
+  background: -webkit-linear-gradient(var(--light), var(--gray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 100%;
+  margin-bottom: 30px;
+}
