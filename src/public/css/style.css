@@ -1,0 +1,36 @@
+/* Import */
+@import url(./globals.css);
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbar-inner {
+  padding: 10px 20px;
+  background-color: #ffffff1f;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.navbar .navbar-nav {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  gap: 25px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--light-alt);
+  text-transform: capitalize;
+}
+.navbar .navbar-nav .nav-item .nav-link.active {
+  color: var(--light);
+}

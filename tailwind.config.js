@@ -6,10 +6,26 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      screens: {
+        sm: "600px",
+        md: "728px",
+        lg: "984px",
+        xl: "1280px",
+        "2xl": "1280px",
+      },
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+      },
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        dark: "var(--dark)",
+        darkAlt: "var(--dark-alt)",
+        light: "var(--light)",
+        lightAlt: "var(--light-alt)",
+        gray: "var(--gray)",
       },
     },
   },

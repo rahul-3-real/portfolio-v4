@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --dark: #000000;
+  --dark-alt: #151515;
+  --light: #ffffff;
+  --light-alt: #999999;
+  --gray: #949494;
+}
+
+/* Rest Styles */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+*::selection {
+  background: var(--dark-alt);
+  color: var(--light);
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--light);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--dark);
+  overflow-x: hidden;
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+b,
+i,
+u,
+ul,
+ol,
+li,
+span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--gray);
+}
