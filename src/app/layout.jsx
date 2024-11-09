@@ -1,4 +1,5 @@
-import "../static/css/tailwind.config.css";
+import "../static/css/style.css";
+import { Cursor } from "../components";
 
 export const metadata = {
   title: "Rahul Yadav - Portfolio",
@@ -8,7 +9,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Cursor />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
