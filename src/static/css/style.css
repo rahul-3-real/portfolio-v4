@@ -1,3 +1,89 @@
 /* Imoports */
 @import url(./tailwind.config.css);
 @import url(./global.css);
+
+/* Navbar */
+.navbar {
+  position: relative;
+  padding: 15px 0;
+  z-index: 3;
+}
+.navbar .nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.navbar .logo {
+  width: 70px;
+}
+.navbar .nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 25px;
+}
+.navbar .nav-menu .nav-link {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--light-alt);
+  transition: 0.5s ease all;
+}
+.navbar .nav-menu .nav-link:hover,
+.navbar .nav-menu .nav-link.active {
+  color: var(--light);
+}
+.navbar .nav-toggle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+.navbar .nav-toggle span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: var(--light);
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: 0.5s ease all;
+}
+.navbar .nav-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(5px);
+}
+.navbar .nav-toggle.active span:nth-child(2) {
+  transform: rotate(-45deg) translateY(-5px);
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+  .navbar .nav-toggle {
+    display: block;
+  }
+  .navbar .nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 80%;
+    width: 320px;
+    height: 100%;
+    background-color: var(--dark);
+    transition: 0.5s ease all;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px;
+  }
+  .navbar .nav-menu.hide {
+    left: -80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navbar .logo {
+    width: 50px;
+  }
+}

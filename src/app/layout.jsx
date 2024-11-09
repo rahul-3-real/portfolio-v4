@@ -1,5 +1,5 @@
 import "../static/css/style.css";
-import { Cursor } from "../components";
+import { Cursor, Navbar } from "../components";
 
 export const metadata = {
   title: "Rahul Yadav - Portfolio",
@@ -9,9 +9,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="h-screen">
         <Cursor />
-        <main>{children}</main>
+        <main className="relative z-1">
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );
