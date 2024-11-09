@@ -27,7 +27,7 @@
   scrollbar-width: thin;
 }
 *::selection {
-  background: var(--dark);
+  background: transparent;
   color: var(--light);
 }
 ::-webkit-scrollbar {
@@ -80,4 +80,10 @@ p {
   font-size: 16px;
   color: var(--light-alt);
   line-height: 160%;
+}
+
+/* Section */
+.section {
+  position: relative;
+  padding: 100px 0;
 }

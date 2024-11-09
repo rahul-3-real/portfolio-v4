@@ -1,5 +1,5 @@
-import "../static/css/style.css";
-import { Cursor, Navbar } from "../components";
+import { Cursor, Navbar } from "@/components";
+import "@/static/css/style.css";
 
 export const metadata = {
   title: "Rahul Yadav - Portfolio",
