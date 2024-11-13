@@ -114,8 +114,15 @@ p {
   justify-content: space-between;
   gap: 30px;
   padding: 20px 30px;
-  background: transparent;
-  border: 1px solid var(--dark-alt);
+  background: linear-gradient(
+      45deg,
+      var(--dark),
+      var(--dark-alt) 51%,
+      var(--dark)
+    )
+    var(--x, 0) / 150%;
+  border: 0;
+  outline: 0;
   font-size: 16px;
   color: var(--light);
   border-radius: 10px;
@@ -123,8 +130,7 @@ p {
   transition: 0.5s ease all;
 }
 .button:hover {
-  border-radius: 50px;
-  border-color: var(--light-alt);
+  --x: 100%;
 }
 
 /* Accordion */
