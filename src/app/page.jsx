@@ -1,6 +1,7 @@
 import {
   Hero,
   HomeAbout,
+  HomeProcess,
   HomeProjects,
   HomeSkills,
 } from "@/components/sections";
@@ -12,6 +13,7 @@ const Home = () => {
       <HomeAbout />
       <HomeProjects />
       <HomeSkills />
+      <HomeProcess />
     </>
   );
 };
