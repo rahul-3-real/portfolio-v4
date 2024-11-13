@@ -25,7 +25,7 @@ const Cursor = () => {
 
   return (
     <div
-      className="pointer-events-none fixed inset-0 -z-1 transition duration-300 lg:absolute h-full w-screen"
+      className="pointer-events-none fixed inset-0 -z-1 transition duration-300 h-full w-screen"
       ref={cursorRef}
       style={{
         background: `radial-gradient(800px circle at 0px 0px, #ffffff26, transparent 80%)`,

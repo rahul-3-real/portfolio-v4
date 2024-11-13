@@ -46,6 +46,7 @@ body {
   padding: 0;
   background-color: var(--dark);
   overflow-x: hidden;
+  overflow-y: auto;
   position: relative;
 }
 h1,
@@ -77,7 +78,7 @@ video {
   width: 100%;
 }
 p {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--light-alt);
   line-height: 160%;
 }
@@ -86,4 +87,20 @@ p {
 .section {
   position: relative;
   padding: 100px 0;
+  background-color: transparent;
+}
+
+/* Headings */
+.heading {
+  font-size: 60px;
+  font-family: var(--sans-serif-alt);
+  background: linear-gradient(to right, var(--light), var(--light-alt));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+}
+.sub-heading {
+  font-size: 30px;
+  color: var(--light-alt);
+  text-transform: capitalize;
 }
