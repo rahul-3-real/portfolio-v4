@@ -86,7 +86,7 @@ p {
 /* Section */
 .section {
   position: relative;
-  padding: 100px 0;
+  padding: 150px 0;
   background-color: transparent;
 }
 
@@ -98,9 +98,31 @@ p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: capitalize;
+  line-height: 150%;
 }
 .sub-heading {
   font-size: 30px;
   color: var(--light-alt);
   text-transform: capitalize;
+}
+
+/* Buttons */
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px 30px;
+  background: transparent;
+  border: 1px solid var(--dark-alt);
+  font-size: 16px;
+  color: var(--light);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+.button:hover {
+  border-radius: 50px;
+  border-color: var(--light-alt);
 }
