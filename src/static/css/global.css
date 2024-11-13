@@ -126,3 +126,39 @@ p {
   border-radius: 50px;
   border-color: var(--light-alt);
 }
+
+/* Accordion */
+.accordion {
+  position: relative;
+}
+.accordion .accordion-item {
+  border-bottom: 1px solid var(--dark-alt);
+}
+.accordion .accordion-item:first-child {
+  border-top: 1px solid var(--dark-alt);
+}
+.accordion .accordion-item .accordion-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 20px 10px;
+  cursor: pointer;
+}
+.accordion .accordion-item .accordion-title img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  object-position: center;
+  transition: 0.5s ease all;
+}
+.accordion .accordion-item.active .accordion-title img {
+  transform: rotate(45deg);
+}
+.accordion .accordion-item .accordion-title span {
+  font-size: 25px;
+  color: var(--light);
+}
+.accordion .accordion-item .accordion-content .text {
+  padding: 00px 30px 30px 90px;
+}
