@@ -13,7 +13,7 @@ const Footer = () => {
   const year = date.getFullYear();
 
   return (
-    <footer className="footer">
+    <footer className="section footer">
       <div className="container">
         <div className="grid grid-cols-2 gap-5">
           <div className="col">

@@ -1,6 +1,7 @@
 import {
   Hero,
   HomeAbout,
+  HomeCTA,
   HomeProcess,
   HomeProjects,
   HomeSkills,
@@ -14,6 +15,7 @@ const Home = () => {
       <HomeProjects />
       <HomeSkills />
       <HomeProcess />
+      <HomeCTA />
     </>
   );
 };
