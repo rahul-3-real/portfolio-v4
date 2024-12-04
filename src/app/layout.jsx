@@ -1,4 +1,5 @@
 import { Cursor, Navbar } from "@/components";
+import Footer from "@/components/Footer";
 import "@/static/css/style.css";
 
 export const metadata = {
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <main className="relative z-1">
           <Navbar />
           {children}
+          <Footer />
         </main>
       </body>
     </html>

@@ -1,6 +1,6 @@
 /* Imoports */
-@import url(./tailwind.config.css);
 @import url(./global.css);
+@import url(./tailwind.config.css);
 
 /* Navbar */
 .navbar {
@@ -161,6 +161,43 @@
   background: linear-gradient(to right, var(--light), var(--light-alt));
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Footer */
+.footer {
+  padding-bottom: 50px;
+}
+.footer .social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.footer .social a {
+  color: var(--light-alt);
+  transition: 0.5s ease all;
+}
+.footer .social a:hover {
+  color: var(--light);
+}
+.footer .social a svg {
+  width: 25px;
+  height: 25px;
+}
+.footer h1 {
+  font-size: 15vw;
+  font-family: var(--sans-serif-alt);
+  text-align: center;
+  background: linear-gradient(
+    to top right,
+    var(--dark),
+    var(--dark-alt),
+    var(--dark)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+  line-height: 150%;
 }
 
 /* Responsive */
