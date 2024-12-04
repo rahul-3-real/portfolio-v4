@@ -18,19 +18,28 @@ const Footer = () => {
         <div className="grid grid-cols-2 gap-5">
           <div className="col">
             <div className="social">
-              <Link href="" target="_blank">
+              <Link href="https://github.com/rahul-3-real" target="_blank">
                 <FaGithub />
               </Link>
-              <Link href="" target="_blank">
+              <Link
+                href="https://www.linkedin.com/in/rahul-3-real/"
+                target="_blank"
+              >
                 <FaLinkedinIn />
               </Link>
-              <Link href="" target="_blank">
+              <Link href="https://codepen.io/rahulyadav311" target="_blank">
                 <FaCodepen />
               </Link>
-              <Link href="" target="_blank">
+              <Link
+                href="https://www.instagram.com/rahul.yadav_ok/"
+                target="_blank"
+              >
                 <FaInstagram />
               </Link>
-              <Link href="" target="_blank">
+              <Link
+                href="https://open.spotify.com/user/82wcpp0z04h4mysqwjnt9dd2w"
+                target="_blank"
+              >
                 <FaSpotify />
               </Link>
             </div>
