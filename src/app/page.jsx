@@ -5,6 +5,7 @@ import {
   HomeProcess,
   HomeProjects,
   HomeSkills,
+  HomeTestimonial,
 } from "@/components/sections";
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <HomeProjects />
       <HomeSkills />
       <HomeProcess />
+      <HomeTestimonial />
       <HomeCTA />
     </>
   );
