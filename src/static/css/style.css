@@ -343,6 +343,60 @@
   border-color: var(--light);
 }
 
+/* About Experience */
+.about-experience .exp-list .exp-list-item {
+  border-bottom: 1px solid var(--dark-alt);
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+.about-experience .exp-list .exp-list-item:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.about-experience .exp-list-item .head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+.about-experience .exp-list-item .head h5 {
+  font-size: 25px;
+  font-family: var(--sans-serif-alt);
+  color: var(--light);
+}
+.about-experience .exp-list-item .head h5 span {
+  display: block;
+  font-size: 20px;
+  color: var(--light-alt);
+  margin-top: 15px;
+}
+.about-experience .exp-list-item .head h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--light-alt);
+}
+.about-experience .exp-list-item .head h6 span {
+  color: var(--light);
+}
+.about-experience .exp-list-item .body {
+  margin-top: 30px;
+}
+.about-experience .exp-list-item .body ul li {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: var(--light-alt);
+  line-height: 140%;
+}
+.about-experience .exp-list-item .body ul li:last-child {
+  margin-bottom: 0;
+}
+.about-experience .exp-list-item .body ul li b {
+  display: block;
+  color: var(--light);
+  margin-bottom: 10px;
+}
+
 /* Responsive */
 @media screen and (max-width: 1200px) {
 }
