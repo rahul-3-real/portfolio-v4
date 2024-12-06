@@ -168,3 +168,42 @@ p {
 .accordion .accordion-item .accordion-content .text {
   padding: 00px 30px 30px 90px;
 }
+
+/* Breadcrumb */
+.breadcrumb {
+  position: relative;
+  margin: 50px 0;
+  border: 1px solid var(--dark-alt);
+  border-radius: 10px;
+  padding: 10px 20px 15px;
+}
+.breadcrumb .breadcrumb-title {
+  font-size: 25px;
+  font-family: var(--sans-serif-alt);
+  background: linear-gradient(to right, var(--light), var(--light-alt));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+  line-height: 150%;
+}
+.breadcrumb .breadcrumb-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.breadcrumb .breadcrumb-menu .breadcrumb-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.breadcrumb .breadcrumb-menu .breadcrumb-item svg {
+  margin-left: 10px;
+  color: var(--dark-alt);
+}
+.breadcrumb .breadcrumb-menu .breadcrumb-item .breadcrumb-link {
+  color: var(--light);
+}
+.breadcrumb .breadcrumb-menu .breadcrumb-item .breadcrumb-link.active {
+  color: var(--light-alt);
+}

@@ -13,7 +13,7 @@ const Breadcrumb = ({ data }) => {
           ))}
         </div>
 
-        <div className="col-span-3">
+        <div className="col-span-3 h-100 flex justify-end items-center">
           <ul className="breadcrumb-menu">
             {Object.entries(data).map(([label, path], index, array) => (
               <li key={label} className="breadcrumb-item">
