@@ -1,5 +1,4 @@
-import { Cursor, Navbar } from "@/components";
-import Footer from "@/components/Footer";
+import { Cursor, Navbar, Footer } from "@/components";
 import "@/static/css/style.css";
 
 export const metadata = {
