@@ -260,6 +260,7 @@
   -webkit-text-fill-color: transparent;
   text-transform: capitalize;
   line-height: 150%;
+  cursor: default;
 }
 
 /* Testimonial Carousel */
