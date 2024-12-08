@@ -1,6 +1,7 @@
 import { Breadcrumb } from "@/components";
 import BioSection from "./BioSection";
 import ExperienceSection from "./ExperienceSection";
+import SkillsSection from "./SkillsSection";
 
 const AboutPage = () => {
   const breadcrumbData = {
@@ -16,6 +17,7 @@ const AboutPage = () => {
 
       <BioSection />
       <ExperienceSection />
+      <SkillsSection />
     </>
   );
 };
