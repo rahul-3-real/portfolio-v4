@@ -364,6 +364,7 @@
   font-size: 25px;
   font-family: var(--sans-serif-alt);
   color: var(--light);
+  line-height: 150%;
 }
 .about-experience .exp-list-item .head h5 span {
   display: block;
@@ -387,6 +388,9 @@
   font-size: 18px;
   color: var(--light-alt);
   line-height: 140%;
+  list-style: initial;
+  padding-left: 10px;
+  margin-left: 20px;
 }
 .about-experience .exp-list-item .body ul li:last-child {
   margin-bottom: 0;
@@ -395,6 +399,7 @@
   display: block;
   color: var(--light);
   margin-bottom: 10px;
+  line-height: 150%;
 }
 
 /* Skill Icons */
@@ -417,6 +422,9 @@
   .testimonial-slides {
     grid-template-columns: repeat(2, 1fr);
   }
+  .about-experience .exp-list-item .head {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 768px) {
   .navbar .nav-toggle {
@@ -438,6 +446,12 @@
   }
   .navbar .nav-menu.hide {
     left: -80%;
+  }
+  .heading {
+    font-size: 40px;
+  }
+  .sub-heading {
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 500px) {

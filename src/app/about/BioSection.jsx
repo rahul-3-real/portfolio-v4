@@ -2,12 +2,12 @@ const BioSection = () => {
   return (
     <section className="section">
       <div className="container">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-5">
-          <div className="md:col-span-2 col-auto">
-            <h1 className="heading mb-5">Rahul Yadav</h1>
-            <h2 className="sub-heading">Fullstack Developer</h2>
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-5">
+          <div className="lg:col-span-2 col-span-2">
+            <h1 className="heading mb-3 lg:mb-5">Rahul Yadav</h1>
+            <h2 className="sub-heading mb-10">Fullstack Developer</h2>
           </div>
-          <div className="md:col-span-3 col-auto">
+          <div className="lg:col-span-3 col-span-2">
             <p className="mb-3">
               A <b className="text-light">self-taught</b> full-stack developer
               based in Thane, MH. With over{" "}

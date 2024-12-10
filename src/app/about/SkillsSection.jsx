@@ -67,14 +67,14 @@ const SkillsSection = () => {
   return (
     <section className="section about-experience">
       <div className="container">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-5">
-          <div className="md:col-span-2 col-auto">
-            <div className="sticky top-10">
-              <h3 className="heading mb-5">Skills</h3>
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-5">
+          <div className="lg:col-span-2 col-span-2">
+            <div className="sticky top-10 mb-10">
+              <h3 className="heading mb-3 lg:mb-5">Skills</h3>
               <h4 className="sub-heading">Empowering Proficiency</h4>
             </div>
           </div>
-          <div className="md:col-span-3 col-auto">
+          <div className="lg:col-span-3 col-span-2">
             <ul className="exp-list">
               <li className="exp-list-item">
                 <div className="head">
@@ -84,7 +84,11 @@ const SkillsSection = () => {
                   <div className="skill-icons">
                     {LanguageIcons.map((item) => (
                       <div className="icon" key={item.name}>
-                        <Image src={item.icon} alt={item.name} />
+                        <Image
+                          src={item.icon}
+                          alt={item.name}
+                          title={item.name}
+                        />
                       </div>
                     ))}
                   </div>
@@ -99,7 +103,11 @@ const SkillsSection = () => {
                   <div className="skill-icons">
                     {FrameworkIcons.map((item) => (
                       <div className="icon" key={item.name}>
-                        <Image src={item.icon} alt={item.name} />
+                        <Image
+                          src={item.icon}
+                          alt={item.name}
+                          title={item.name}
+                        />
                       </div>
                     ))}
                   </div>
@@ -114,7 +122,11 @@ const SkillsSection = () => {
                   <div className="skill-icons">
                     {DatabaseIcons.map((item) => (
                       <div className="icon" key={item.name}>
-                        <Image src={item.icon} alt={item.name} />
+                        <Image
+                          src={item.icon}
+                          alt={item.name}
+                          title={item.name}
+                        />
                       </div>
                     ))}
                   </div>
@@ -129,7 +141,11 @@ const SkillsSection = () => {
                   <div className="skill-icons">
                     {DesignIcons.map((item) => (
                       <div className="icon" key={item.name}>
-                        <Image src={item.icon} alt={item.name} />
+                        <Image
+                          src={item.icon}
+                          alt={item.name}
+                          title={item.name}
+                        />
                       </div>
                     ))}
                   </div>
@@ -144,7 +160,11 @@ const SkillsSection = () => {
                   <div className="skill-icons">
                     {DevOpsIcons.map((item) => (
                       <div className="icon" key={item.name}>
-                        <Image src={item.icon} alt={item.name} />
+                        <Image
+                          src={item.icon}
+                          alt={item.name}
+                          title={item.name}
+                        />
                       </div>
                     ))}
                   </div>

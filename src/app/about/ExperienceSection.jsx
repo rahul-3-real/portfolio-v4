@@ -2,14 +2,14 @@ const ExperienceSection = () => {
   return (
     <section className="section about-experience">
       <div className="container">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-5">
-          <div className="md:col-span-2 col-auto">
-            <div className="sticky top-10">
-              <h3 className="heading mb-5">Experience</h3>
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-5">
+          <div className="lg:col-span-2 col-span-2">
+            <div className="sticky top-10 mb-10">
+              <h3 className="heading lg:mb-5 mb-3">Experience</h3>
               <h4 className="sub-heading">Crafting Real Expertise</h4>
             </div>
           </div>
-          <div className="md:col-span-3 col-auto">
+          <div className="lg:col-span-3 col-span-2">
             <ul className="exp-list">
               <li className="exp-list-item">
                 <div className="head">
