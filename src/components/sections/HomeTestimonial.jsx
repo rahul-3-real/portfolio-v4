@@ -83,18 +83,20 @@ const HomeTestimonial = () => {
   return (
     <section className="section">
       <div className="container">
-        <div className="grid grid-cols-4 mb-10">
-          <div className="col-span-3">
+        <div className="grid grid-cols-4 mb-10 gap-10">
+          <div className="md:col-span-3 col-span-4">
             <h4 className="heading">Insights from Collaborators</h4>
           </div>
 
-          <div className="testimonial-controls">
-            <button className="prev" onClick={handlePrev}>
-              <IoIosArrowBack />
-            </button>
-            <button className="next" onClick={handleNext}>
-              <IoIosArrowForward />
-            </button>
+          <div className="md:col-span-1 col-span-4">
+            <div className="testimonial-controls">
+              <button className="prev" onClick={handlePrev}>
+                <IoIosArrowBack />
+              </button>
+              <button className="next" onClick={handleNext}>
+                <IoIosArrowForward />
+              </button>
+            </div>
           </div>
         </div>
 
@@ -122,6 +124,17 @@ const HomeTestimonial = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="testimonial-slides-mob">
+            <div className="testimonial-card">
+              <h5>{testimonials[currentIndex].name}</h5>
+              <ul>
+                <li>{testimonials[currentIndex].companyName}</li>
+                <li>{testimonials[currentIndex].relation}</li>
+              </ul>
+              <p>{testimonials[currentIndex].content}</p>
+            </div>
           </div>
         </div>
       </div>

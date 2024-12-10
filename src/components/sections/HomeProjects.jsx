@@ -10,8 +10,8 @@ const HomeProjects = () => {
       <div className="container">
         <h3 className="text-center heading mb-10">Some Things I've Built</h3>
 
-        <div className="grid md:grid-cols-12 grid-cols-2 gap-5">
-          <div className="md:col-span-8 col-auto">
+        <div className="grid lg:grid-cols-12 grid-cols-2 gap-5">
+          <div className="lg:col-span-8 col-span-12">
             <div className="project-card active h-full">
               <div className="image relative w-full h-auto">
                 <Image src={Project1} alt="Project 01" priority />
@@ -24,7 +24,7 @@ const HomeProjects = () => {
               </div>
             </div>
           </div>
-          <div className="md:col-span-4 col-auto">
+          <div className="lg:col-span-4 col-span-12">
             <div className="project-card mb-5">
               <div className="image relative w-full h-auto">
                 <Image src={Project2} alt="Project 02" priority />

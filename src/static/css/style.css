@@ -425,6 +425,12 @@
   .about-experience .exp-list-item .head {
     flex-direction: column;
   }
+  .hero h2 {
+    font-size: 70px;
+  }
+  .project-card .text {
+    bottom: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .navbar .nav-toggle {
@@ -459,12 +465,33 @@
   .breadcrumb .breadcrumb-menu .breadcrumb-item .breadcrumb-link {
     font-size: 14px;
   }
+  .hero {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .hero h2 {
+    font-size: 40px;
+  }
+  .hero h4,
+  .project-card .text .link {
+    font-size: 20px;
+  }
+  .accordion .accordion-item .accordion-title span {
+    font-size: 20px;
+    line-height: 150%;
+  }
+  .accordion .accordion-item .accordion-content .text {
+    padding: 0 30px 30px;
+  }
+  .testimonial-controls {
+    justify-content: flex-start;
+  }
+  .testimonial-slides {
+    display: none;
+  }
 }
 @media screen and (max-width: 500px) {
   .navbar .logo {
     width: 50px;
-  }
-  .testimonial-slides {
-    grid-template-columns: repeat(1, 1fr);
   }
 }

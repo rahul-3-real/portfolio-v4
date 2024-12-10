@@ -4,8 +4,8 @@ const HomeProcess = () => {
       <div className="container">
         <h3 className="heading mb-20">How I bring ideas to life</h3>
 
-        <div className="grid md:grid-cols-10 grid-cols-2 gap-20">
-          <div className="md:col-span-4 col-auto">
+        <div className="grid lg:grid-cols-10 grid-cols-2 gap-20">
+          <div className="lg:col-span-4 col-span-2">
             <div className="process-item">
               <div className="title">
                 <h5>Discovery</h5>
@@ -23,7 +23,7 @@ const HomeProcess = () => {
             </div>
           </div>
 
-          <div className="md:col-span-4 md:col-start-6 col-auto">
+          <div className="lg:col-span-4 lg:col-start-6 col-span-2">
             <div className="process-item">
               <div className="title">
                 <h5>Design</h5>
@@ -41,7 +41,7 @@ const HomeProcess = () => {
             </div>
           </div>
 
-          <div className="md:col-span-4 col-auto">
+          <div className="lg:col-span-4 col-span-2">
             <div className="process-item">
               <div className="title">
                 <h5>Development</h5>
@@ -59,7 +59,7 @@ const HomeProcess = () => {
             </div>
           </div>
 
-          <div className="md:col-span-4 md:col-start-6 col-auto">
+          <div className="lg:col-span-4 lg:col-start-6 col-span-2">
             <div className="process-item">
               <div className="title">
                 <h5>Delivery</h5>

@@ -9,6 +9,10 @@ import { Logo } from "@/static/images";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div className="navbar">
       <div className="container">
@@ -27,22 +31,34 @@ const Navbar = () => {
 
           <ul className={`nav-menu  ${menuOpen ? "" : "hide"}`}>
             <li className="nav-item">
-              <Link href="/about" className="nav-link">
+              <Link
+                href="/about"
+                className="nav-link"
+                onClick={handleLinkClick}
+              >
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/work" className="nav-link">
+              <Link href="/work" className="nav-link" onClick={handleLinkClick}>
                 Work
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/articles" className="nav-link">
+              <Link
+                href="/articles"
+                className="nav-link"
+                onClick={handleLinkClick}
+              >
                 Articles
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/contact" className="nav-link">
+              <Link
+                href="/contact"
+                className="nav-link"
+                onClick={handleLinkClick}
+              >
                 Contact
               </Link>
             </li>
