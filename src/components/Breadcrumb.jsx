@@ -1,16 +1,18 @@
 import Link from "next/link";
-import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { BsChevronRight } from "react-icons/bs";
 
 const Breadcrumb = ({ data }) => {
+  const currentBreadcrumb = Object.entries(data).find(
+    ([label, path]) => path === "current"
+  );
+
   return (
     <div className="breadcrumb">
       <div className="grid grid-cols-5 gap-5">
         <div className="col-span-2">
-          {Object.entries(data).map(([label, path]) => (
-            <h2 className="breadcrumb-title" key={label}>
-              {path === "current" && label}
-            </h2>
-          ))}
+          {currentBreadcrumb && (
+            <h2 className="breadcrumb-title">{currentBreadcrumb[0]}</h2>
+          )}
         </div>
 
         <div className="col-span-3 h-100 flex justify-end items-center">

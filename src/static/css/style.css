@@ -453,6 +453,12 @@
   .sub-heading {
     font-size: 24px;
   }
+  .breadcrumb .breadcrumb-title {
+    font-size: 18px;
+  }
+  .breadcrumb .breadcrumb-menu .breadcrumb-item .breadcrumb-link {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 500px) {
   .navbar .logo {

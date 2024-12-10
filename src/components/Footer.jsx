@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className="section footer">
       <div className="container">
         <div className="grid grid-cols-2 gap-5">
-          <div className="col">
+          <div className="md:col-span-1 col-span-2">
             <div className="social">
               <Link href="https://github.com/rahul-3-real" target="_blank">
                 <FaGithub />
@@ -44,8 +44,8 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="col">
-            <p className="text-end">{year} | Designed by yours truly.</p>
+          <div className="md:col-span-1 col-span-2">
+            <p className="md:text-end">{year} | Designed by yours truly.</p>
           </div>
         </div>
 

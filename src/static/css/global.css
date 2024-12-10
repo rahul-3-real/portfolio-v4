@@ -203,6 +203,7 @@ p {
 }
 .breadcrumb .breadcrumb-menu .breadcrumb-item .breadcrumb-link {
   color: var(--light);
+  font-size: 16px;
 }
 .breadcrumb .breadcrumb-menu .breadcrumb-item .breadcrumb-link.active {
   color: var(--light-alt);
