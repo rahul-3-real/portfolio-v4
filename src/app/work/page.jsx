@@ -1,4 +1,6 @@
 import { Breadcrumb } from "@/components";
+import Projects from "./Projects";
+import ProjectsTable from "./ProjectsTable";
 
 const WorkPage = () => {
   const breadcrumbData = {
@@ -11,6 +13,9 @@ const WorkPage = () => {
       <div className="container">
         <Breadcrumb data={breadcrumbData} />
       </div>
+
+      <Projects />
+      <ProjectsTable />
     </>
   );
 };

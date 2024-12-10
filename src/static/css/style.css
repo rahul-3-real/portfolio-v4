@@ -342,6 +342,9 @@
 .testimonial-controls button:hover {
   border-color: var(--light);
 }
+.testimonial-slides-mob {
+  display: none;
+}
 
 /* About Experience */
 .about-experience .exp-list .exp-list-item {
@@ -413,6 +416,42 @@
 .skill-icons .icon {
   width: 80px;
   height: 80px;
+}
+
+/* Projects Table */
+.projects-table tr {
+  border-bottom: 1px solid var(--dark-alt);
+}
+.projects-table tbody tr:last-child {
+  border-bottom: 0;
+}
+.projects-table thead tr th {
+  font-size: 18px;
+  color: var(--light);
+}
+.projects-table tr th,
+.projects-table tr td {
+  padding: 15px 10px;
+}
+.projects-table tbody tr th {
+  font-size: 16px;
+  color: var(--light);
+}
+.projects-table tbody tr td {
+  font-size: 16px;
+  color: var(--light-alt);
+}
+.projects-table tbody tr td span {
+  font-size: 14px;
+  padding: 7px 15px;
+  border-radius: 50px;
+  background-color: var(--dark-alt);
+  color: var(--light);
+  margin: 0 10px 10px 0;
+  display: inline-block;
+}
+.projects-table tbody tr td a {
+  color: var(--light);
 }
 
 /* Responsive */
@@ -488,6 +527,9 @@
   }
   .testimonial-slides {
     display: none;
+  }
+  .testimonial-slides-mob {
+    display: block;
   }
 }
 @media screen and (max-width: 500px) {

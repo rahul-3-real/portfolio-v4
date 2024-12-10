@@ -1,17 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
 
 import { Project1, Project2, Project3 } from "@/static/images";
 
-const HomeProjects = () => {
+const Projects = () => {
   return (
     <section className="section">
       <div className="container">
-        <h3 className="text-center heading mb-10">Some Things I've Built</h3>
-
-        <div className="grid lg:grid-cols-12 grid-cols-2 gap-5">
-          <div className="lg:col-span-8 col-span-12">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
+          <div className="col">
             <div className="project-card active h-full">
               <div className="image relative w-full h-auto">
                 <Image src={Project1} alt="Project 01" priority />
@@ -24,8 +21,9 @@ const HomeProjects = () => {
               </div>
             </div>
           </div>
-          <div className="lg:col-span-4 col-span-12">
-            <div className="project-card mb-5">
+
+          <div className="col">
+            <div className="project-card active h-full">
               <div className="image relative w-full h-auto">
                 <Image src={Project2} alt="Project 02" priority />
               </div>
@@ -36,8 +34,10 @@ const HomeProjects = () => {
                 <span>MERN</span>
               </div>
             </div>
+          </div>
 
-            <div className="project-card">
+          <div className="col">
+            <div className="project-card active h-full">
               <div className="image relative w-full h-auto">
                 <Image src={Project3} alt="Project 03" priority />
               </div>
@@ -50,16 +50,9 @@ const HomeProjects = () => {
             </div>
           </div>
         </div>
-
-        <div className="text-center mt-20">
-          <Link href="/work" className="button">
-            <span>See More Projects</span>
-            <BsArrowRight />
-          </Link>
-        </div>
       </div>
     </section>
   );
 };
 
-export default HomeProjects;
+export default Projects;
